@@ -24,6 +24,7 @@ from receipe import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.login,name="login"),
+    path('register/',views.register,name="register"),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
